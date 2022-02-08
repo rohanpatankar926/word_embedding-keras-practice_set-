@@ -33,16 +33,16 @@
 -->It must specify 3 arguments:
 
 -->**input_dim**: This is the size of the vocabulary in the text data. For example, if your data is integer encoded to values between 0-10, then the size of the vocabulary would be 11 words.</br>
--->**output_dim**: This is the size of the vector space in which words will be embedded. It defines the size of the output vectors from this layer for each word. For example, it could be 32 or 100 or even larger. Test different values for your problem.
+-->**output_dim**: This is the size of the vector space in which words will be embedded. It defines the size of the output vectors from this layer for each word. For example, it could be 32 or 100 or even larger. Test different values for your problem.</br>
 -->**input_length**: This is the length of input sequences, as you would define for any input layer of a Keras model. For example, if all of your input documents are comprised of 1000 words, this would be 1000.</br>
 -->For example, below we define an Embedding layer with a vocabulary of 200 (e.g. integer encoded words from 0 to 199, inclusive), a vector space of 32 dimensions in which words -->will be embedded, and input documents that have 50 words each.</br>
 
--->*e = Embedding(200, 32, input_length=50)*
--->The Embedding layer has weights that are learned. If you save your model to file, this will include weights for the Embedding layer.
+-->*e = Embedding(200, 32, input_length=50)*</br>
+-->The Embedding layer has weights that are learned. If you save your model to file, this will include weights for the Embedding layer.,/br>
 
--->The output of the Embedding layer is a 2D vector with one embedding for each word in the input sequence of words (input document).
+-->The output of the Embedding layer is a 2D vector with one embedding for each word in the input sequence of words (input document).</br>
 
--->If you wish to connect a Dense layer directly to an Embedding layer, you must first flatten the 2D output matrix to a 1D vector using the Flatten layer.
+-->If you wish to connect a Dense layer directly to an Embedding layer, you must first flatten the 2D output matrix to a 1D vector using the Flatten layer.</br>
 
 # References:
 [Blog](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)</br>
