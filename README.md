@@ -16,7 +16,7 @@
 
 -->In addition to these carefully designed methods, a word embedding can be learned as part of a deep learning model. This can be a slower approach, but tailors the model to a specific training dataset.
 
-### keras Embedding Layer
+# keras Embedding Layer
 -->Keras offers an Embedding layer that can be used for neural networks on text data.
 
 -->It requires that the input data be integer encoded, so that each word is represented by a unique integer. This data preparation step can be performed using the Tokenizer API also provided with Keras.
@@ -44,6 +44,6 @@
 
 -->If you wish to connect a Dense layer directly to an Embedding layer, you must first flatten the 2D output matrix to a 1D vector using the Flatten layer.
 
-### References:
-[a link](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
-[a link](https://www.youtube.com/watch?v=pO_6Jk0QtKw&list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi&index=42)
+# References:
+[Blog](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)</br>
+[Video](https://www.youtube.com/watch?v=pO_6Jk0QtKw&list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi&index=42)
